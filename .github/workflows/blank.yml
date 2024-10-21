@@ -9,6 +9,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
+    name: CompositionBuild - Release Only (PalmaServer .NET Windows)
     runs-on: ubuntu-latest
     steps:
         - run: /usr/bin/true
