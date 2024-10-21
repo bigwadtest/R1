@@ -11,4 +11,4 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-        - run: /usr/bin/false
+        - run: /usr/bin/true
