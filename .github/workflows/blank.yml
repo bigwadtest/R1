@@ -1,14 +1,15 @@
 # This is a basic workflow to help you get started with Actions
 
 name: CI
-
+run-name: CI
 on:
   push:
-    branches: [ "patch*" ]
+    branches: [ "patch*", "gh-readonly-queue*" ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
+    name: CompositionBuild - Release Only (PalmaServer .NET Windows)
     runs-on: ubuntu-latest
     steps:
-        - run: /usr/bin/false
+        - run: /usr/bin/true
